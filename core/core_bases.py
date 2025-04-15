@@ -79,6 +79,11 @@ class Problem(ABC):
         """ 返回会随状态更新的动态渲染数据 """
         pass
 
+    @abstractmethod
+    def set_state(self, state: State) -> None:
+        """ 直接设置问题的状态 """
+        pass
+
 
 class Agent(ABC):
     @abstractmethod

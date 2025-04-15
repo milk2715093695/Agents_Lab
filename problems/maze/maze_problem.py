@@ -139,6 +139,10 @@ class MazeProblem(Problem):
             "count": self._get_count(),
             "state": self.get_state()
         }
+    
+    def set_state(self, state: coordinates) -> None:
+        self.location = state
+
 
 def evaluate_func(problem: Problem, state: coordinates, action: Direction) -> Tuple[int, int]:
     start_pos = problem.apply_action_to_state(state, action)

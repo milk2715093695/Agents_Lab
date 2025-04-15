@@ -39,5 +39,5 @@ class MazeHumanAgent(Agent):
         return direction
     
     @classmethod
-    def from_config(cls, **config):
-        return
+    def from_config(cls, **config) -> "MazeHumanAgent":
+        return cls()

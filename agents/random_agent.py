@@ -9,5 +9,5 @@ class RandomAgent(Agent):
         return random.choice(list(problem.get_legal_actions(problem.get_state())))
     
     @classmethod
-    def from_config(cls, **config):
-        return
+    def from_config(cls, **config) -> "RandomAgent":
+        return cls()
